@@ -1,0 +1,114 @@
+/* Global styles for body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .signupContainer {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Heading */
+  .signupHeading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  /* Form styling */
+  .signupForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input Group */
+  .inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .inputGroup label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #444444;
+  }
+  
+  .inputGroup input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  .inputGroup input:focus {
+    border-color: #007bff;
+    outline: none;
+    background-color: #ffffff;
+  }
+  
+  /* Button styling */
+  .signupButton {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signupButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link styling */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .signupContainer {
+      margin: 50px 20px;
+      padding: 20px;
+    }
+  }
+  
+  .forget_password_button {
+    background-color: #4CAF50; /* Green background */
+    color: white;               /* White text */
+    border: none;               /* Remove border */
+    padding: 10px 20px;         /* Padding inside button */
+    font-size: 16px;            /* Font size */
+    border-radius: 5px;         /* Rounded corners */
+    cursor: pointer;            /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.forget_password_button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
