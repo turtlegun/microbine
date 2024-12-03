@@ -3,6 +3,7 @@ import axios from 'axios';
 import styles from './login.module.css';  // Import the CSS module
 import { Link, useNavigate } from 'react-router-dom';
 import UnauthorizedError from '../error/custom_error';
+import { setdata } from '../../profile/get_data';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -14,20 +15,26 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/login', {
+      const response = await axios.post('http://13.203.112.187:5000/login', {
         email,
         password,
         username
       });
-
+      
       if(response.status==200){
+const data=response.data
+console.log(data)
 
+setdata(data.firstname,data.email,data.password,data.dob,data.lastname,data.username)
+   
 navigate('/home')
       }
     
     } catch (error) {
-        setError(true)
-      console.log(error, 'error');
+        console.log(error,"error")
+        alert("incorrect username and password")
+    //     setError(true)
+    //   console.log(error, 'error');
     }
   };
 
@@ -82,14 +89,14 @@ navigate('/home')
   <h3>Don't have a account</h3>
 
   <Link to="/signup">Sign Up</Link>
-  <h3>or <button class={styles.forget_password_button}>Forget Password</button></h3>
+  {/* <h3>or <button class={styles.forget_password_button}>Forget Password</button></h3> */}
   </div>
 )}
    
-
+{/* 
     {error &&(
         <UnauthorizedError/>
-    )}
+    )} */}
 
   
 

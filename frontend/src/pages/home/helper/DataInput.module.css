@@ -1,19 +1,23 @@
 /* Container Card */
 .dataInput {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 500px;
-    margin: 20px auto;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+  
+    background-image: url('https://cdn.pixabay.com/photo/2013/07/18/10/55/dna-163466_1280.jpg');
+    background-size: cover; 
+  background-position: center;
   }
   
   /* Section Title */
   .title {
     font-size: 24px;
-    color: #333;
+    color: #ffffff;
     text-align: center;
     margin-bottom: 15px;
+    position: absolute;
+    left: 550px;
+    top: 50px;
   }
   
   /* Upload Option */
@@ -23,6 +27,11 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
+
+    max-width: 500px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
   }
   
   .uploadOption h3 {
@@ -65,3 +74,14 @@
     background-color: #45a049;
   }
   
+ 
+  .result{
+
+    position: absolute;
+    left: 400px;
+  }
+  .about_page{
+
+    position: absolute;
+    top: 550px;
+  }

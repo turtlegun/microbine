@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
-import numpy as np
+
 from mail_config import mail
 from dotenv import load_dotenv
 import os
@@ -9,9 +9,6 @@ load_dotenv()
 
 from database import table_creation
 
-import tensorflow as tf
-import logging
-logging.getLogger('tensorflow').setLevel(logging.ERROR)
 
 
 
@@ -36,12 +33,21 @@ mail.init_app(app)
 from routes.sign_up import sign_up
 from routes.login import login
 from routes.password_recovery import recovery
+from routes.predictionRoute import prediction
+
 app.register_blueprint(sign_up)
 
 app.register_blueprint(login)
 
 app.register_blueprint(recovery)
 
+app.register_blueprint(prediction)
 
+@app.route('/')
+def home():
+    print("hello")
+    return "hello"
+
+app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')

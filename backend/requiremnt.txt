@@ -1,0 +1,9 @@
+Flask-Mail
+pandas
+matplotlib
+Flask
+Flask-Cors
+python-dotenv
+joblib
+scikit-learn
+openpyxl

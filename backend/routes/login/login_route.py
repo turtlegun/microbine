@@ -23,11 +23,13 @@ def login_route():
         
         user=cursor.fetchone()
         
+        
         if user:
            
 
             con.close()
-            return jsonify({"message":"user founded"}),200
+            return jsonify({"message":"user founded","username":user['username'],"firstname":user['firstname'],
+                            "lastname":user['lastname'],"dob":user['dob'] ,"email":user['email'],"password":user['password']}),200
         else:
            
 
