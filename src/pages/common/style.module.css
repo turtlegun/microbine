@@ -1,0 +1,10 @@
+.message{
+    font-family: "Roboto", serif;
+    font-weight: 600; 
+}
+.left_message{
+    font-family: "Roboto", serif;
+    font-weight: 300;  
+    font-size: 1.81vw;
+    color: #F4F5F9;
+}

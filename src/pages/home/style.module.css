@@ -1,0 +1,11 @@
+.container_header{
+    font-family: "Roboto", serif;
+    font-weight: 400;  
+    font-size: 1.11vw;
+}
+.input{
+    width: 10.42vw;
+height: 4.39vh;
+background-color: #1615151A;
+border-radius: 0.17vw;
+}

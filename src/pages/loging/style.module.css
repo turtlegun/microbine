@@ -1,0 +1,22 @@
+.signup_header{
+    font-family: "Roboto", serif;
+    font-weight: 500; 
+}
+.input{
+    width: 22.22vw;
+height: 4.41vh;
+background-color: #1615151A;
+border-radius: 0.494vw;
+border: none;
+outline: none;
+font-family: "Roboto", serif;
+font-weight: 500; 
+color:#16151533;
+}
+.submit_button{
+    font-family: "Roboto", serif;
+    font-weight: 500;
+  
+    font-size: 1.19vw;
+    border-radius: 0.494vw;
+}
